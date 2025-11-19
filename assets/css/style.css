@@ -5,20 +5,64 @@
 }
 
 
+/* Chart card umum */
 .card-chart {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    margin-bottom: 30px;
-    width: 436px;
-   height: 370px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 18px;
+    height: auto;
+    width: 100%;
 }
 
+/* Chart title */
 .chart-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Canvas behavior */
+.card-chart canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 340px;
+}
+
+/* ===========================
+      MOBILE IMPROVEMENT
+   =========================== */
+@media (max-width: 768px) {
+
+    .row.g-4>div {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    .card-chart {
+        padding: 15px;
+        margin-top: 5px;
+        border-radius: 15px;
+    }
+
+    .chart-title {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .card-chart canvas {
+        max-height: 220px !important;
+    }
+}
+
+/* Tambahan untuk layar sangat kecil < 480px */
+@media (max-width: 480px) {
+    .card-chart canvas {
+        max-height: 180px !important;
+    }
+
+    .chart-title {
+        font-size: 16px;
+    }
 }
 
 .sidebar {

@@ -92,19 +92,21 @@
 
             <!-- chart -->
             <div class="row mt-4 g-4">
-                <div class="col-lg-6">
+
+                <div class="col-lg-6 col-md-12">
                     <div class="card-chart shadow-md" data-aos="zoom-in">
                         <div class="chart-title">Earnings</div>
                         <canvas id="donutChart"></canvas>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="card-chart shadow-md" data-aos="zoom-in">
-                        <div class="chart-title">Conversions</div>
+                        <div class="chart-title">Activity</div>
                         <canvas id="barChart"></canvas>
                     </div>
                 </div>
+
             </div>
         </div>
         <!-- chart End -->
@@ -167,10 +169,6 @@
             }
         });
 
-
-        // ==========================
-        // BAR CHART (Conversions)
-        // ==========================
         const bar = document.getElementById("barChart");
 
         new Chart(bar, {
@@ -179,14 +177,14 @@
                 labels: ["S", "M", "T", "W", "T", "F", "S"],
                 datasets: [
                     {
-                        label: "Primary",
-                        data: [40, 60, 55, 70, 60, 65, 45],
+                        label: "Login User",
+                        data: [120, 300, 280, 350, 320, 290, 200],
                         backgroundColor: "#3b5bfd",
                         borderRadius: 7
                     },
                     {
-                        label: "Secondary",
-                        data: [75, 95, 90, 110, 85, 125, 80],
+                        label: "Pengunjung Tanpa Login",
+                        data: [80, 150, 140, 200, 170, 160, 90],
                         backgroundColor: "#56e0ff",
                         borderRadius: 7
                     }
@@ -195,16 +193,12 @@
             options: {
                 responsive: true,
                 scales: {
-                    y: {
-                        beginAtZero: true,
-                        ticks: { stepSize: 20 }
-                    }
+                    y: { beginAtZero: true }
                 },
-                plugins: {
-                    legend: { display: false }
-                }
+                plugins: { legend: { display: false } }
             }
         });
+
 
 
     </script>
