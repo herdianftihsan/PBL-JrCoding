@@ -61,18 +61,6 @@ PBL-JrCoding/
 │── /files
 │     ├── contoh.zip
 
-🧱 Cara Menjalankan Project
-
-Clone repository
-
-git clone https://github.com/herdianftihsan/PBL-JrCoding.git
-
-
-Masuk ke folder project
-
-cd PBL-JrCoding
-
-
 Buka file
 
 Klik dua kali index.html
