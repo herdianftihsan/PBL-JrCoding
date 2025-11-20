@@ -24,11 +24,11 @@ function login(event){
    }
    
 
-   if (user.role === "admin") {
-    window.location.href = "/PBL-JrCoding/admin"
-   } else if(user.role === "user"){
-    window.location.href = "/PBL-JrCoding/user"
-   }
+  if (user.role === "admin") {
+    window.location.href = "/PBL-JrCoding/admin/index.html";
+} else if (user.role === "user") {
+    window.location.href = "/PBL-JrCoding/user/index.html";
+}
 }
 
 
