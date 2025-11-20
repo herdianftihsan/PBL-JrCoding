@@ -5,6 +5,8 @@
 }
 
 
+
+
 /* Chart card umum */
 .card-chart {
     background: #fff;
@@ -108,14 +110,13 @@
 
 
     .content {
-        margin-left: 0 !important;
+        margin-top: 60px;
         width: 100%;
     }
 }
 
 .content {
-    flex: 1;
-
+    flex: 1 !important;
 }
 
 
