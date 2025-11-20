@@ -114,7 +114,8 @@
                                 EASY — Buat halaman web pertamamu dengan struktur HTML.
                             </p>
                         </div>
-                        <a href="#" class="btn custom-btn btn-sm align-self-start">Mulai</a>
+                        <a href="#" onclick="openProjectVideo('HTML Dasar')"
+                            class="btn custom-btn btn-sm align-self-start">Mulai</a>
                     </div>
                 </div>
             </div>
@@ -129,7 +130,8 @@
                                 EASY — Membuat web tampil lebih modern dan responsive.
                             </p>
                         </div>
-                        <a href="#" class="btn custom-btn btn-sm align-self-start">Mulai</a>
+                        <a href="#" onclick="openProjectVideo('CSS Styling')"
+                            class="btn custom-btn btn-sm align-self-start">Mulai</a>
                     </div>
                 </div>
             </div>
@@ -144,7 +146,9 @@
                                 NORMAL — Tambahkan logika & interaksi ke website.
                             </p>
                         </div>
-                        <a href="#" class="btn custom-btn btn-sm align-self-start">Mulai</a>
+                        <a href="#" onclick="openProjectVideo('JavaScript Interaktif')"
+                            class="btn custom-btn btn-sm align-self-start">Mulai</a>
+
                     </div>
                 </div>
             </div>
@@ -159,7 +163,9 @@
                                 NORMAL — Pelajari logika dasar dengan bahasa C.
                             </p>
                         </div>
-                        <a href="#" class="btn custom-btn btn-sm align-self-start">Mulai</a>
+                        <a href="#" onclick="openProjectVideo('C Programming')"
+                            class="btn custom-btn btn-sm align-self-start">Mulai</a>
+
                     </div>
                 </div>
             </div>
@@ -189,7 +195,8 @@
                                 </div>
                                 <div class="mt-auto d-flex justify-content-between align-items-center">
                                     <small class="text-body-secondary">Project: Dashboard Admin</small>
-                                    <a href="#" class="btn custom-btn btn-sm px-3">Mulai</a>
+                                    <a href="#" onclick="openProjectVideo('React JS — EXPERT')"
+                                        class="btn custom-btn btn-sm px-3">Mulai</a>
                                 </div>
                             </div>
                         </div>
@@ -214,7 +221,7 @@
                                 </div>
                                 <div class="mt-auto d-flex justify-content-between align-items-center">
                                     <small class="text-body-secondary">Project: Sistem CRUD Artikel</small>
-                                    <a href="#" class="btn custom-btn btn-sm px-3">Mulai</a>
+                                   <a href="#" onclick="openProjectVideo('Laravel — HARD')" class="btn custom-btn btn-sm px-3">Mulai</a>
                                 </div>
                             </div>
                         </div>
@@ -239,7 +246,7 @@
                                 </div>
                                 <div class="mt-auto d-flex justify-content-between align-items-center">
                                     <small class="text-body-secondary">Project: REST API Blog</small>
-                                    <a href="#" class="btn custom-btn btn-sm px-3">Mulai</a>
+                                   <a href="#" onclick="openProjectVideo('Node.js — HARD')" class="btn custom-btn btn-sm px-3">Mulai</a>
                                 </div>
                             </div>
                         </div>
@@ -264,8 +271,7 @@
                                 </div>
                                 <div class="mt-auto d-flex justify-content-between align-items-center">
                                     <small class="text-body-secondary">Project: Landing Page Modern</small>
-                                    <a href="#" class="btn custom-btn btn-sm px-3">Mulai</a>
-                                </div>
+                                    <a href="#" onclick="openProjectVideo('Bootstrap — NORMAL')" class="btn custom-btn btn-sm px-3">Mulai</a>                                </div>
                             </div>
                         </div>
                     </div>
@@ -275,6 +281,25 @@
         </div>
     </div>
 
+    <!-- Modal Video Proyek -->
+    <div class="modal fade" id="videoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalTitle">Video Tutorial</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="videoFrame" src="" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
     <!-- Footer -->
@@ -300,6 +325,34 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        const projectVideos = {
+            "React JS — EXPERT": "https://www.youtube.com/watch?v=bMknfKXIFA8",
+            "Laravel — HARD": "https://www.youtube.com/watch?v=ImtZ5yENzgE",
+            "Node.js — HARD": "https://www.youtube.com/watch?v=RLtyhwFtXQA",
+            "Bootstrap — NORMAL": "https://www.youtube.com/watch?v=4sosXZsdy-s",
+
+            "HTML Dasar": "https://www.youtube.com/watch?v=qz0aGYrrlhU",
+            "CSS Styling": "https://www.youtube.com/watch?v=OXGznpKZ_sA",
+            "JavaScript Interaktif": "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+            "C Programming": "https://www.youtube.com/watch?v=KJgsSFOSQv0"
+        };
+
+        function openProjectVideo(title) {
+            document.getElementById("videoModalTitle").innerText = title;
+
+            let url = projectVideos[title];
+            let embed = url.replace("watch?v=", "embed/");
+
+            document.getElementById("videoFrame").src = embed;
+
+            let modal = new bootstrap.Modal(document.getElementById("videoModal"));
+            modal.show();
+        }
+
+        document.getElementById("videoModal").addEventListener("hidden.bs.modal", () => {
+            document.getElementById("videoFrame").src = "";
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

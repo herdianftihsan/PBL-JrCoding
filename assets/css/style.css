@@ -223,3 +223,37 @@ nav a:hover {
 .card-text {
     font-size: 0.95rem;
 }
+
+.video-module-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.video-module {
+    display: flex;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 12px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.video-module:hover {
+    background: #e9f2ff;
+    transform: scale(1.02);
+}
+
+.video-module .thumb {
+    width: 80px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.module-title {
+    margin: 0;
+    font-weight: 600;
+}

@@ -25,11 +25,13 @@ function login(event){
    
 
    if (user.role === "admin") {
-    window.location.href = "admin/index.html"
+    window.location.href = "/admin/index.html"
    } else if(user.role === "user"){
-    window.location.href = "user/index.html"
+    window.location.href = "/user/index.html"
    }
 }
+
+
 
 function toggleSidebar() {
     const sidebar = document.querySelector(".sidebar");

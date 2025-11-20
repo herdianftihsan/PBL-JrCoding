@@ -14,51 +14,50 @@
 
 <body>
 
-   <nav class="navbar navbar-expand-md navbar-light bg-primary mb-3 sticky-top shadow-lg ">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-        <a class="navbar-brand text-white" href="#">
-            <img src="../assets/img/a-modern-logo-design-for-a-coding-educat_bJ6bYG6kSGirTlHY-vSCBA_whnI_tjoSeSVBCZo1uudvA.jpeg"
-                alt="" width="40" height="34" class="d-inline-block align-text-top">
-            JrCoding
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav me-3"> 
-                <li class="nav-item ">
-                    <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="tutorial.html">Tutorial</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="proyek.html">Proyek</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="ForumDiskusi.html">Forum Diskusi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="sertifikat.html">Sertifikat</a>
-                </li>
-            </ul>
-
-            <!-- 🔥 Tombol Logout -->
-            <a href="../index.html" class="btn btn-outline-light fw-semibold px-3">
-                Logout
+    <nav class="navbar navbar-expand-md navbar-light bg-primary mb-3 sticky-top shadow-lg ">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand text-white" href="#">
+                <img src="../assets/img/a-modern-logo-design-for-a-coding-educat_bJ6bYG6kSGirTlHY-vSCBA_whnI_tjoSeSVBCZo1uudvA.jpeg"
+                    alt="" width="40" height="34" class="d-inline-block align-text-top">
+                JrCoding
             </a>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="tutorial.html">Tutorial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="proyek.html">Proyek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="ForumDiskusi.html">Forum Diskusi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="sertifikat.html">Sertifikat</a>
+                    </li>
+                </ul>
+
+                <a href="../index.html" class="btn btn-outline-light fw-semibold px-3">
+                    Logout
+                </a>
+
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 
     <div class="m-5" data-aos="fade-right">
 
-        <h1 class="mb-5 text-bold" >Kursus Belajar Coding <br>
+        <h1 class="mb-5 text-bold">Kursus Belajar Coding <br>
             untuk Pemula</h1>
         <h4>Kursus Ini Membantu Anda Untuk Memulai</h4>
         <p>Jelajahi kursus dari para ahli dunia nyata yang berpengalaman.</p>
@@ -69,22 +68,26 @@
 
             <div class="col-6 col-sm-4 col-md-3 col-lg-3" data-aos="zoom-in">
                 <div class="card h-100 shadow-sm text-center">
-                    <img src="https://www.svgrepo.com/show/452228/html-5.svg" class="card-img-top img-fluid p-3" alt="HTML">
+                    <img src="https://www.svgrepo.com/show/452228/html-5.svg" class="card-img-top img-fluid p-3"
+                        alt="HTML">
                     <div class="card-body">
                         <h5 class="fw-bold">HTML Dasar</h5>
                         <p class="card-text">Pelajari struktur dasar pembuatan halaman website dengan HTML.</p>
-                        <a href="" class="btn btn-primary">Mulai</a>
+                        <a onclick="openProjectVideo('HTML Dasar')"
+                            class="btn custom-btn btn-sm align-self-start">Mulai</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-6 col-sm-4 col-md-3 col-lg-3" data-aos="zoom-in">
                 <div class="card h-100 shadow-sm text-center">
-                    <img src="https://www.svgrepo.com/show/452185/css-3.svg" class="card-img-top img-fluid p-3" alt="CSS">
+                    <img src="https://www.svgrepo.com/show/452185/css-3.svg" class="card-img-top img-fluid p-3"
+                        alt="CSS">
                     <div class="card-body">
                         <h5 class="fw-bold">CSS Dasar</h5>
                         <p class="card-text">Belajar menghias tampilan website agar lebih cantik dan responsif.</p>
-                        <a href="" class="btn btn-primary">Mulai</a>
+                        <a onclick="openProjectVideo('CSS Styling')"
+                            class="btn custom-btn btn-sm align-self-start">Mulai</a>
                     </div>
                 </div>
             </div>
@@ -96,18 +99,21 @@
                     <div class="card-body">
                         <h5 class="fw-bold">JavaScript Pemula</h5>
                         <p class="card-text">Mulai membuat website interaktif dengan JavaScript dasar.</p>
-                        <a href="" class="btn btn-primary">Mulai</a>
+                        <a onclick="openProjectVideo('JavaScript Interaktif')"
+                            class="btn custom-btn btn-sm align-self-start">Mulai</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-6 col-sm-4 col-md-3 col-lg-3" data-aos="zoom-in">
                 <div class="card h-100 shadow-sm text-center">
-                    <img src="https://img.icons8.com/?size=96&id=40670&format=png" class="card-img-top img-fluid p-3" alt="C">
+                    <img src="https://img.icons8.com/?size=96&id=40670&format=png" class="card-img-top img-fluid p-3"
+                        alt="C">
                     <div class="card-body">
                         <h5 class="fw-bold">Belajar C Dasar</h5>
                         <p class="card-text">Pahami dasar logika dan struktur bahasa pemrograman C.</p>
-                        <a href="" class="btn btn-primary">Mulai</a>
+                        <a onclick="openProjectVideo('C Programming')"
+                            class="btn custom-btn btn-sm align-self-start">Mulai</a>
                     </div>
                 </div>
             </div>
@@ -117,106 +123,134 @@
 
 
     <div class="container my-5">
-    <div class="row g-4 justify-content-center">
+        <div class="row g-4 justify-content-center">
 
-        <div class="col-6" data-aos="fade-right">
-            <div class="card h-100 shadow-sm border-0 hover-shadow">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-4">
-                        <img src="../assets/img/thumbnaill/react.png" class="img-fluid rounded-start h-100 object-fit-cover" alt="React">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body d-flex flex-column justify-content-between h-100 p-3">
-                            <div>
-                                <h5 class="card-title fw-bold mb-2">React JS Dasar</h5>
-                                <p class="card-text small mb-3 text-muted d-none d-sm-block">
-                                    Belajar membuat UI interaktif menggunakan library paling populer di dunia.
-                                </p>
-                            </div>
-                            <div class="mt-auto d-flex justify-content-between align-items-center">
-                                <small class="text-body-secondary">Level: Pemula</small>
-                                <a href="#" class="btn btn-primary btn-sm px-3">Mulai</a>
+            <div class="col-6" data-aos="fade-right">
+                <div class="card h-100 shadow-sm border-0 hover-shadow">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="../assets/img/thumbnaill/react.png"
+                                class="img-fluid rounded-start h-100 object-fit-cover" alt="React">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex flex-column justify-content-between h-100 p-3">
+                                <div>
+                                    <h5 class="card-title fw-bold mb-2">React JS Dasar</h5>
+                                    <p class="card-text small mb-3 text-muted d-none d-sm-block">
+                                        Belajar membuat UI interaktif menggunakan library paling populer di dunia.
+                                    </p>
+                                </div>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <small class="text-body-secondary">Level: Pemula</small>
+                                    <a onclick="openProjectVideo('React JS — Pemula')"
+                                        class="btn custom-btn btn-sm px-3">Mulai</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-6" data-aos="fade-left">
-            <div class="card h-100 shadow-sm border-0 hover-shadow">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-4">
-                        <img src="../assets/img/thumbnaill/Laravel.svg.png" class="img-fluid rounded-start h-100 object-fit-cover" alt="Laravel">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body d-flex flex-column justify-content-between h-100 p-3">
-                            <div>
-                                <h5 class="card-title fw-bold mb-2">Laravel Dasar</h5>
-                                <p class="card-text small mb-3 text-muted d-none d-sm-block">
-                                    Framework PHP modern untuk membangun aplikasi web secara cepat dan efisien.
-                                </p>
-                            </div>
-                            <div class="mt-auto d-flex justify-content-between align-items-center">
-                                <small class="text-body-secondary">Level: Pemula</small>
-                                <a href="#" class="btn btn-primary btn-sm px-3">Mulai</a>
+            <div class="col-6" data-aos="fade-left">
+                <div class="card h-100 shadow-sm border-0 hover-shadow">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="../assets/img/thumbnaill/Laravel.svg.png"
+                                class="img-fluid rounded-start h-100 object-fit-cover" alt="Laravel">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex flex-column justify-content-between h-100 p-3">
+                                <div>
+                                    <h5 class="card-title fw-bold mb-2">Laravel Dasar</h5>
+                                    <p class="card-text small mb-3 text-muted d-none d-sm-block">
+                                        Framework PHP modern untuk membangun aplikasi web secara cepat dan efisien.
+                                    </p>
+                                </div>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <small class="text-body-secondary">Level: Pemula</small>
+                                    <a onclick="openProjectVideo('Laravel — Pemula')"
+                                        class="btn custom-btn btn-sm px-3">Mulai</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-6" data-aos="fade-right">
-            <div class="card h-100 shadow-sm border-0 hover-shadow">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-4">
-                        <img src="https://ncarb.github.io/bootstrap/assets/img/bootstrap-stack.png" class="img-fluid rounded-start h-100 object-fit-cover" alt="Bootstrap">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body d-flex flex-column justify-content-between h-100 p-3">
-                            <div>
-                                <h5 class="card-title fw-bold mb-2">Bootstrap 5</h5>
-                                <p class="card-text small mb-3 text-muted d-none d-sm-block">
-                                    Belajar membuat tampilan web modern dengan komponen siap pakai.
-                                </p>
-                            </div>
-                            <div class="mt-auto d-flex justify-content-between align-items-center">
-                                <small class="text-body-secondary">Level: Pemula</small>
-                                <a href="#" class="btn btn-primary btn-sm px-3">Mulai</a>
+            <div class="col-6" data-aos="fade-right">
+                <div class="card h-100 shadow-sm border-0 hover-shadow">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="https://ncarb.github.io/bootstrap/assets/img/bootstrap-stack.png"
+                                class="img-fluid rounded-start h-100 object-fit-cover" alt="Bootstrap">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex flex-column justify-content-between h-100 p-3">
+                                <div>
+                                    <h5 class="card-title fw-bold mb-2">Bootstrap 5</h5>
+                                    <p class="card-text small mb-3 text-muted d-none d-sm-block">
+                                        Belajar membuat tampilan web modern dengan komponen siap pakai.
+                                    </p>
+                                </div>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <small class="text-body-secondary">Level: Pemula</small>
+                                    <a onclick="openProjectVideo('Bootstrap — NORMAL')"
+                                        class="btn custom-btn btn-sm px-3">Mulai</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-6" data-aos="fade-left">
-            <div class="card h-100 shadow-sm border-0 hover-shadow">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-4">
-                        <img src="https://www.svgrepo.com/show/452075/node-js.svg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Node.js">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body d-flex flex-column justify-content-between h-100 p-3">
-                            <div>
-                                <h5 class="card-title fw-bold mb-2">Node.js Dasar</h5>
-                                <p class="card-text small mb-3 text-muted d-none d-sm-block">
-                                    Pelajari backend JavaScript untuk membangun server dan API.
-                                </p>
-                            </div>
-                            <div class="mt-auto d-flex justify-content-between align-items-center">
-                                <small class="text-body-secondary">Level: Pemula</small>
-                                <a href="#" class="btn btn-primary btn-sm px-3">Mulai</a>
+            <div class="col-6" data-aos="fade-left">
+                <div class="card h-100 shadow-sm border-0 hover-shadow">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="https://www.svgrepo.com/show/452075/node-js.svg"
+                                class="img-fluid rounded-start h-100 object-fit-cover" alt="Node.js">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex flex-column justify-content-between h-100 p-3">
+                                <div>
+                                    <h5 class="card-title fw-bold mb-2">Node.js Dasar</h5>
+                                    <p class="card-text small mb-3 text-muted d-none d-sm-block">
+                                        Pelajari backend JavaScript untuk membangun server dan API.
+                                    </p>
+                                </div>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <small class="text-body-secondary">Level: Pemula</small>
+                                    <a onclick="openProjectVideo('Node.js — Pemula')"
+                                        class="btn custom-btn btn-sm px-3">Mulai</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
+
+    <!-- Modal Preview Kursus -->
+    <div class="modal fade" id="videoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalTitle">Video Tutorial</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="videoFrame" src="" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 
@@ -243,6 +277,40 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+        const projectVideos = {
+    "React JS — Pemula": "https://www.youtube.com/embed/kcnwI_5nKyA?si=mR-6tkTy6RQa5Lcr", 
+    
+    "Laravel — Pemula": "https://www.youtube.com/embed/T1TR-RGf2Pw?si=FdRxTJywWBI--fUY", 
+
+    "Node.js — Pemula": "https://www.youtube.com/embed/sSLJx5t4OJ4?si=glPJKwNgr79BRz-Q", 
+
+    "Bootstrap — NORMAL": "https://www.youtube.com/embed/igwNyjc7Ii8?si=XelUebu3HW8BaXA_", 
+
+    "HTML Dasar": "https://www.youtube.com/embed/NBZ9Ro6UKV8?si=s-ybTFBNx_qS0Nxt", 
+
+    "CSS Styling": "https://www.youtube.com/embed/CleFk3BZB3g?si=x8dCS9pZAa6jdJQp", 
+
+    "JavaScript Interaktif": "https://www.youtube.com/embed/RUTV_5m4VeI?si=-yCZyI3eVa8MHYTz", 
+
+    "C Programming": "https://www.youtube.com/embed/ZNFc_gT-P74?si=dyLp-nhUrYvjH7d5" 
+};
+
+
+        function openProjectVideo(title) {
+            document.getElementById("videoModalTitle").innerText = title;
+
+            let url = projectVideos[title];
+            let embed = url.replace("watch?v=", "embed/");
+
+            document.getElementById("videoFrame").src = embed;
+
+            let modal = new bootstrap.Modal(document.getElementById("videoModal"));
+            modal.show();
+        }
+
+        document.getElementById("videoModal").addEventListener("hidden.bs.modal", () => {
+            document.getElementById("videoFrame").src = "";
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
