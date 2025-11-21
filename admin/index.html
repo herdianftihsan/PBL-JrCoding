@@ -59,11 +59,8 @@
             </a>
 
         </div>
-
-
         <div class="container p-4 flex-grow-1 content ">
             <h1 data-aos="fade-right">Welcome Admin Dashboard</h1>
-
             <div class="d-flex flex-wrap gap-3 mt-3">
                 <div class="card text-bg-success mb-3" style="width: 18rem;" data-aos="zoom-in">
                     <div class="card-header">Jumlah User</div>
@@ -72,7 +69,6 @@
                         <p class="card-text">Some quick example text to build on the card title.</p>
                     </div>
                 </div>
-
                 <div class="card text-bg-success mb-3" style="width: 18rem;" data-aos="zoom-in">
                     <div class="card-header">Jumlah Tutorial</div>
                     <div class="card-body">
@@ -80,7 +76,6 @@
                         <p class="card-text">Some quick example text to build on the card title.</p>
                     </div>
                 </div>
-
                 <div class="card text-bg-success mb-3" style="width: 18rem;" data-aos="zoom-in">
                     <div class="card-header">Jumlah Proyek</div>
                     <div class="card-body">
@@ -89,7 +84,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- chart -->
             <div class="row mt-4 g-4">
 
@@ -99,7 +93,6 @@
                         <canvas id="donutChart"></canvas>
                     </div>
                 </div>
-
                 <div class="col-lg-6 col-md-12">
                     <div class="card-chart shadow-md" data-aos="zoom-in">
                         <div class="chart-title">Activity</div>
@@ -111,8 +104,6 @@
         </div>
         <!-- chart End -->
     </div>
-
-
     </div>
 
 
@@ -132,14 +123,12 @@
         </div>
     </footer>
 
-
     <script src="../assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
         const donut = document.getElementById("donutChart");
-
         new Chart(donut, {
             type: "doughnut",
             data: {
@@ -168,9 +157,7 @@
                 }
             }
         });
-
         const bar = document.getElementById("barChart");
-
         new Chart(bar, {
             type: "bar",
             data: {
@@ -198,9 +185,6 @@
                 plugins: { legend: { display: false } }
             }
         });
-
-
-
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
