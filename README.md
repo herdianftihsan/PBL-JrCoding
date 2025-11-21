@@ -8,7 +8,7 @@ Website ini dibangun menggunakan HTML, CSS, JavaScript, dan Bootstrap 5, serta d
 🚀 Live Demo
 
 Kunjungi Website:
-👉 https://herdianftihsan.github.io/PBL-JrCoding/
+👉pbl-jr-coding.vercel.app/
 
 📘 Fitur Utama
 ✔ Halaman Beranda
